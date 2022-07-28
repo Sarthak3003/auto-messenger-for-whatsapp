@@ -15,7 +15,7 @@ input("Enter anything after scanning QR code: ")
 
 user = driver.find_element_by_xpath('//span[@title = "{}"]'.format(name))
 user.click()
-msg_box = driver.find_element_by_class_name('p3_M1')
+msg_box = driver.find_element_by_class_name('p3_M1')                                                        #message box class
 
 print("\nEnter year like 2022\nMonth like 2\nDay like 10\nWhere 2 means feb for month\n")
 
@@ -33,5 +33,5 @@ while work_not_done:
     if year == localtime()[0] and month == localtime()[1] and day == localtime()[2] and hour == localtime()[3] and minu == localtime()[4] and sec == localtime()[5]:
         for i in range(count):
             msg_box.send_keys(msg)
-            button = driver.find_element_by_class_name('_3HQNh _1Ae7k')
+            button = driver.find_element_by_class_name('_3HQNh _1Ae7k')                                     #send button class
             button.click()
