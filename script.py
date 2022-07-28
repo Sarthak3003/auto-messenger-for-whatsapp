@@ -11,7 +11,7 @@ name = input("Enter the name of user or group: ")
 msg = input("Enter your message: ")
 count = int(input("Enter the count: "))
 
-input("Enter anything after scanning QR code")
+input("Enter anything after scanning QR code: ")
 
 user = driver.find_element_by_xpath('//span[@title = "{}"]'.format(name))
 user.click()
@@ -21,7 +21,7 @@ print("\nEnter year like 2022\nMonth like 2\nDay like 10\nWhere 2 means feb for 
 
 year = int(input("which year to send message? "))
 month = int(input("which month to send message? "))
-day = int(input("which day to send message? "))
+day = int(input("which date to send message? "))
 
 hour = int(input("which hour of the day in 24 hrs format: "))
 minu = int(input("Minute of the hour 0-59: "))
